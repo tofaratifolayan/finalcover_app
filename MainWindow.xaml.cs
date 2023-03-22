@@ -52,19 +52,29 @@ namespace finalcover_app
 
         private void BtnSaveImage(object sender, RoutedEventArgs e)
         {
-            RenderTargetBitmap rtb = new RenderTargetBitmap((int)canvas.RenderSize.Width,
-            (int)canvas.RenderSize.Height, 96d, 96d, System.Windows.Media.PixelFormats.Default);
-            rtb.Render(canvas);
+            //RenderTargetBitmap rtb = new RenderTargetBitmap((int)canvas.RenderSize.Width,
+            //(int)canvas.RenderSize.Height, 96d, 96d, System.Windows.Media.PixelFormats.Default);
+            //rtb.Render(canvas);
 
-            var crop = new CroppedBitmap(rtb, new Int32Rect(50, 50, 250, 250));
+            //var crop = new CroppedBitmap(rtb, new Int32Rect(250, 250, 350, 350));
 
-            BitmapEncoder pngEncoder = new PngBitmapEncoder();
-            pngEncoder.Frames.Add(BitmapFrame.Create(crop));
+            //BitmapEncoder pngEncoder = new PngBitmapEncoder();
+            //pngEncoder.Frames.Add(BitmapFrame.Create(crop));
 
-            using (var fs = System.IO.File.OpenWrite("canvas.png"))
-            {
-                pngEncoder.Save(fs);
-            }
+            //using (System.IO.FileStream fs = System.IO.File.OpenWrite("C:\\Users\\tofar\\Pictures\\canvas.png"))
+            //{
+            //    pngEncoder.Save(fs);
+            //}
+
+            RenderTargetBitmap bmp = new RenderTargetBitmap((int)canvas.ActualWidth, (int)canvas.ActualHeight, 100.0, 100.0, PixelFormats.Default);
+            bmp.Render(canvas);
+
+            PngBitmapEncoder encoder = new PngBitmapEncoder();
+            encoder.Frames.Add(BitmapFrame.Create(bmp));
+
+            System.IO.FileStream stream = System.IO.File.Create("C:\\Users\\tofar\\Pictures\\canvas.png");
+            encoder.Save(stream);
+            stream.Close();
         }
         private void Canvas_MouseDown(object sender, MouseButtonEventArgs e)
         {
