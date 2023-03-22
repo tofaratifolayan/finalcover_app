@@ -22,17 +22,19 @@
     
     <StackPanel>
         
-        <WrapPanel Margin="10 0 10 0" HorizontalAlignment="Center">
+        <WrapPanel Margin="10" HorizontalAlignment="Center">
             <Button 
                 x:Name="btnLoadFromFile"
                 Click="BtnLoadFromFile_Click"
-                Cursor="Hand">
+                Cursor="Hand"
+                Margin="10">
                 Load from File...
             </Button>
             <Button 
                 x:Name="btnSave"
                 Click="BtnSaveImage"
-                Cursor="Hand">
+                Cursor="Hand"
+                Margin="10">
                 Save Canvas
             </Button>
         </WrapPanel>
