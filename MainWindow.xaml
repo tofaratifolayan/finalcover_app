@@ -22,12 +22,18 @@
     
     <StackPanel>
         
-        <WrapPanel Margin="10" HorizontalAlignment="Center">
+        <WrapPanel Margin="10 0 10 0" HorizontalAlignment="Center">
             <Button 
                 x:Name="btnLoadFromFile"
                 Click="BtnLoadFromFile_Click"
                 Cursor="Hand">
                 Load from File...
+            </Button>
+            <Button 
+                x:Name="btnSave"
+                Click="BtnSaveImage"
+                Cursor="Hand">
+                Save Canvas
             </Button>
         </WrapPanel>
 
@@ -38,7 +44,8 @@
             MouseMove="Canvas_MouseMove"
             MouseUp="Canvas_MouseUp"
             Height="350"
-            Width="350"/>
+            Width="350"
+            AllowDrop="True"/>
         
         <!--<xctk:ColorPicker x:Name="ClrPcker_Background" SelectedColorChanged="ClrPcker_Background_SelectedColorChanged"/>-->
 
