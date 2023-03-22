@@ -1,0 +1,10 @@
+https://www.alphr.com/vs-code-how-to-create-a-new-project/
+https://wpf-tutorial.com/basic-controls/the-image-control/
+https://www.youtube.com/watch?v=70-x_Zkf2gE&list=PLJJcOjd3n1Zegr2CaA78RWF9IIgeyq0xh&index=2
+https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/how-to-create-and-use-a-canvas?view=netframeworkdesktop-4.8
+https://stackoverflow.com/questions/62315767/how-to-draw-a-rectangle-on-a-canvas-with-mouse-but-see-the-rectangle-while-movi
+https://stackoverflow.com/questions/28749841/onclick-event-for-rectangle-with-c-sharp
+https://devcoons.com/c-wpf-canvas-move-shapes-around/
+https://learn.microsoft.com/en-us/dotnet/api/system.windows.shapes.rectangle?view=windowsdesktop-7.0
+https://stackoverflow.com/questions/6834221/load-colors-into-combobox/6834497#6834497
+https://www.c-sharpcorner.com/blogs/wpf-color-picker-c-sharp
